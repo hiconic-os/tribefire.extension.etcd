@@ -30,7 +30,7 @@ limitations under the License.
         <V.tribefire.cortex>[3.0,3.1)</V.tribefire.cortex>
         <V.com.fasterxml.jackson.core>2.13.3</V.com.fasterxml.jackson.core>
         <V.com.google.guava>31.1-jre</V.com.google.guava>
-        <V.io.etcd>0.7.6</V.io.etcd>
+        <V.io.etcd>0.8.4</V.io.etcd>
         <V.io.netty>2.0.62.Final</V.io.netty>
         <V.io.perfmark>0.26.0</V.io.perfmark>
     </properties>
