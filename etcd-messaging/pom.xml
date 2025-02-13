@@ -43,10 +43,28 @@ limitations under the License.
             <artifactId>logging</artifactId>
             <version>${V.com.braintribe.common}</version>
         </dependency>
+        <!-- See exclusion under jetcd-core -->
+        <dependency>
+    		<groupId>io.vertx</groupId>
+    		<artifactId>vertx-grpc</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
         <dependency>
             <groupId>io.etcd</groupId>
             <artifactId>jetcd-core</artifactId>
             <version>${V.io.etcd}</version>
+            <exclusions>
+            	<!-- (13.2.2025): Excluded and depended 4.5.13 (latest) due to inner dependencies:
+            	   jetcd-core#0.8.4 (latest) -> 
+            	   vertx-grpc#4.5.11 (older) -> 
+            	   io.netty:netty-handler-proxy#4.1.115 (vulnerable)
+            	-->
+            	<exclusion>
+            		<groupId>io.vertx</groupId>
+            		<artifactId>vertx-grpc</artifactId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>tribefire.extension.etcd</groupId>
