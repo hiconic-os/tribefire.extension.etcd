@@ -28,7 +28,7 @@ limitations under the License.
         <V.com.braintribe.activemq>[2.0,2.1)</V.com.braintribe.activemq>
         <V.tribefire.extension.activemq>[3.0,3.1)</V.tribefire.extension.activemq>
         <V.tribefire.cortex>[3.0,3.1)</V.tribefire.cortex>
-        <V.com.fasterxml.jackson.core>2.13.3</V.com.fasterxml.jackson.core>
+        <V.com.fasterxml.jackson.core>2.18.2</V.com.fasterxml.jackson.core>
         <V.com.google.guava>31.1-jre</V.com.google.guava>
         <V.io.etcd>0.8.4</V.io.etcd>
         <V.io.netty>2.0.62.Final</V.io.netty>
